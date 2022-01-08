@@ -26,19 +26,27 @@ Scissors = '''
 '''
 
 print("Welcome to Rock Paper Scissors!")
-user_choice = input(
-    "Please choose one of the following: Type 0 for Rock, 1 for Paper or 2 for Scissors\n")
-
-if user_choice == "0":
+user_choice = int(input(
+    "Please choose one of the following: Type 0 for Rock, 1 for Paper or 2 for Scissors\n"))
+if user_choice == 0:
     print(Rock)
-elif user_choice == "1":
+elif user_choice == 1:
     print(Paper)
-elif user_choice == "2":
+elif user_choice == 2:
     print(Scissors)
 else:
     print("Please enter a valid number")
+print(f"You have chosen: {user_choice}")
 
 computer_choice = random.randint(0, 2)
+
+if computer_choice == 0:
+    print(Rock)
+elif computer_choice == 1:
+    print(Paper)
+elif computer_choice == 2:
+    print(Scissors)
+
 print(f"The computer has chosen: {computer_choice}")
 
 
