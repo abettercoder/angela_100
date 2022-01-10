@@ -27,15 +27,15 @@ nr_of_symbols = int(input("How many symbols do you want in your password? \n"))
 # Hard Level
 passwordlist = []
 for char in range(1, nr_of_letters+1):
-    password_list += random.choice(letter)
+    passwordlist += random.choice(letter)
     for nr in range(1, nr_of_numbers+1):
-        password_list += random.choice(number)
+        passwordlist += random.choice(number)
         for symb in range(1, nr_of_symbols+1):
-            password_list += random.choice(symbol)
-random.shuffle(password_list)
-print(password_list)
+            passwordlist += random.choice(symbol)
+random.shuffle(passwordlist)
+print(passwordlist)
 
 password_hard = ""
-for char in password_list:
+for char in passwordlist:
     password_hard += char
 print(f"Your password is {password_hard}")
