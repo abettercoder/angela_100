@@ -1,10 +1,10 @@
 from turtle import Turtle, Screen
 
-tim_the_turtle = Turtle()
+tim = Turtle()
 
 for _ in range(4):
-    tim_the_turtle.forward(100)
-    tim_the_turtle.right(90)
+    tim.forward(100)
+    tim.right(90)
 
 screen = Screen()
 screen.exitonclick()
