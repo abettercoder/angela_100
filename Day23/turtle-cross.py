@@ -1,1 +1,1 @@
-# Let's make a crossing game
+# Let's make a turtle crossing game.
